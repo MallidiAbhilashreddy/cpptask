@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+//22a91a05e1
+
+class student {
+public:
+    string name,rollnumber,branch;
+    
+    student(string name,string branch,string rollnumber){
+        this->name=name;
+        this->branch=branch;
+        this->rollnumber=rollnumber;
+    }
+    void display(){
+        cout << "name:" << name <<endl;
+        cout << "branch:" << branch <<endl;
+        cout << "rollnumber:" << rollnumber <<endl;
+    }
+};
+
+int main() {
+    string name,branch,rollnumber;
+    cout << "enter student name: ";
+    cin >> name;
+    cout << "enter student branch: ";
+    cin >> branch;
+    cout << "enter student rollnumber: ";
+    cin >> rollnumber;
+    student student1(name,branch,rollnumber);
+    student1.display();
+    return 0;
+}
